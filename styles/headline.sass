@@ -1,0 +1,79 @@
+.headline
+  width: 100%
+
+  +for-large-up
+    position: relative
+    left: 0
+    padding: 0
+    margin: 150px auto 0 60px
+
+  &__action
+      padding: $unit * 2
+
+      +for-large-up
+        max-width: 600px
+        padding: 0
+
+  &__title
+    margin: 0
+    margin-bottom: $unit / 2
+    font-size: $unit
+    font-weight: SemiBold
+    line-height: $unit + 20
+    letter-spacing: 1px
+    
+  &__description
+    margin: 0
+    margin-bottom: $unit
+    font-size: 20px
+    line-height: $unit
+
+  &__upload-btn
+    width: 300px  
+
+  .btn__desctop
+    
+    +for-large-down
+      display: none
+
+    +for-large-up
+      display: block
+
+  .btn__mobile
+
+    +for-large-up
+      display: none
+
+    +for-large-down
+      display: block
+
+  &__img
+    padding: 0 auto
+    width: 100%
+    max-width: 600px
+    margin: 0 auto
+
+    +for-large-up
+      margin: 0
+      height: 502px
+      position: absolute
+      z-index: 1
+      top: 50px
+      left: 521px
+  
+  &__visit-desctop
+    padding: 30px 60px
+    font-size: 20px
+    font-weight: Bold
+    line-height: 40px
+    text-align: center
+    color: white
+    max-width: 100%
+    height: 180px
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png)
+
+    +for-large-up
+      display: none
+     
+
+   

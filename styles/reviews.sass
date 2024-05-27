@@ -1,0 +1,61 @@
+.reviews
+  margin: 50px auto
+  margin-bottom: 0
+  
+  +for-large-up
+    display: flex
+    
+    margin: 160px
+    margin-bottom: 0
+
+  .review
+    position: relative
+    max-width: 540px
+    min-height: 280px
+    margin-bottom: 50px
+    background-color: white
+    box-shadow: 0px 20px 60px rgba(25, 104, 252, 0.1)
+
+    &:last-child
+      margin-bottom: 0
+
+    +for-large-up
+      margin-bottom: 0
+
+      &:first-child
+        margin-right: 40px
+
+    &__img
+      position: absolute
+      top: 40px
+      right: 40px
+      max-width: 60px
+      max-height: 46px
+
+    &__autor
+      display: flex
+      padding: 40px
+      padding-bottom: 0
+
+      &-avatar
+        width: 100px
+        height: 100px
+        
+      &-item
+        display: flex
+        flex-direction: column
+        margin: 20px
+        margin-right: 0
+        line-height: 30px  
+
+        &-name
+          font-size: 18px
+          font-weight: SemiBold 
+        &-text
+          font-size: 14px
+          color: $color-text-blue    
+
+    &__description
+      padding: 40px
+      margin: 0
+      line-height: 30px

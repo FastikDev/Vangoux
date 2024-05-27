@@ -1,0 +1,9 @@
+$lg: 1024px
+
+=for-large-up
+  @media screen and (min-width: $lg)
+    @content
+
+=for-large-down
+  @media screen and (max-width: $lg - 1)
+    @content

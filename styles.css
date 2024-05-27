@@ -1,0 +1,384 @@
+.page-header {
+  heigth: 50px;
+  width: 100%;
+  display: flex;
+  padding-left: 80px;
+  padding-top: 40px;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .page-header {
+    width: 1120px;
+    margin: 30px auto 0 60px;
+    padding: 0;
+  }
+}
+.page-header .logo {
+  display: flex;
+  align-items: center;
+  width: 180px;
+}
+.page-header .logo__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-heigth: 30px;
+  padding: 10px;
+  padding-right: 20px;
+  color: rgb(25, 104, 252);
+}
+.page-header__navigation {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .page-header__navigation {
+    display: block;
+    margin-left: auto;
+  }
+}
+.page-header__navigation-item {
+  padding-right: 60px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+  color: black;
+}
+.page-header__navigation-item:first-child {
+  padding-right: 50px;
+}
+.page-header__navigation-item:last-child {
+  padding: 0;
+}
+.page-header__upload-btn {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .page-header__upload-btn {
+    margin-left: 55px;
+    display: block;
+    width: 180px;
+  }
+}
+
+.action-btn {
+  border: none;
+  height: 50px;
+  padding: auto;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(25, 104, 252);
+}
+
+.headline {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .headline {
+    position: relative;
+    left: 0;
+    padding: 0;
+    margin: 150px auto 0 60px;
+  }
+}
+.headline__action {
+  padding: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .headline__action {
+    max-width: 600px;
+    padding: 0;
+  }
+}
+.headline__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: SemiBold;
+  line-height: 60px;
+  letter-spacing: 1px;
+}
+.headline__description {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.headline__upload-btn {
+  width: 300px;
+}
+@media screen and (max-width: 1023px) {
+  .headline .btn__desctop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .headline .btn__desctop {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .headline .btn__mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .headline .btn__mobile {
+    display: block;
+  }
+}
+.headline__img {
+  padding: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .headline__img {
+    margin: 0;
+    height: 502px;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 521px;
+  }
+}
+.headline__visit-desctop {
+  padding: 30px 60px;
+  font-size: 20px;
+  font-weight: Bold;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  height: 180px;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png);
+}
+@media screen and (min-width: 1024px) {
+  .headline__visit-desctop {
+    display: none;
+  }
+}
+
+.reviews {
+  margin: 50px auto;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .reviews {
+    display: flex;
+    margin: 160px;
+    margin-bottom: 0;
+  }
+}
+.reviews .review {
+  position: relative;
+  max-width: 540px;
+  min-height: 280px;
+  margin-bottom: 50px;
+  background-color: white;
+  box-shadow: 0px 20px 60px rgba(25, 104, 252, 0.1);
+}
+.reviews .review:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .reviews .review {
+    margin-bottom: 0;
+  }
+  .reviews .review:first-child {
+    margin-right: 40px;
+  }
+}
+.reviews .review__img {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  max-width: 60px;
+  max-height: 46px;
+}
+.reviews .review__autor {
+  display: flex;
+  padding: 40px;
+  padding-bottom: 0;
+}
+.reviews .review__autor-avatar {
+  width: 100px;
+  height: 100px;
+}
+.reviews .review__autor-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-right: 0;
+  line-height: 30px;
+}
+.reviews .review__autor-item-name {
+  font-size: 18px;
+  font-weight: SemiBold;
+}
+.reviews .review__autor-item-text {
+  font-size: 14px;
+  color: rgb(25, 103, 250);
+}
+.reviews .review__description {
+  padding: 40px;
+  margin: 0;
+  line-height: 30px;
+}
+
+.wokflow {
+  max-width: 525px;
+  margin: 120px auto 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .wokflow {
+    width: 1120px;
+  }
+}
+.wokflow__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (min-width: 1024px) {
+  .wokflow__title {
+    margin-left: 40px;
+  }
+}
+.wokflow__line {
+  width: 80px;
+  height: 2px;
+  margin: 10px 0px 48px 0px;
+  background-color: rgb(25, 104, 252);
+}
+@media screen and (min-width: 1024px) {
+  .wokflow__line {
+    margin-bottom: 38px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wokflow__steps {
+    display: flex;
+  }
+}
+.wokflow-step {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 180px;
+  padding: 40px;
+  background-color: white;
+}
+@media screen and (min-width: 1024px) {
+  .wokflow-step__second {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wokflow-step__last {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wokflow-step {
+    width: 325px;
+    height: 225px;
+  }
+}
+.wokflow-step__lable {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0;
+}
+.wokflow-step__title {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(25, 103, 250);
+  margin: 0;
+}
+.wokflow-step__description {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 30px;
+}
+.wokflow-step__icon {
+  width: 40px;
+  height: 36px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+.wokflow-step__img {
+  width: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.wokflow__dotted {
+  width: 70px;
+  height: 40px;
+  margin: 0;
+  margin-left: 60px;
+  border: none;
+  border-left: 1px dotted rgb(25, 104, 252);
+}
+@media screen and (min-width: 1024px) {
+  .wokflow__dotted {
+    margin: 0;
+    margin-top: 110px;
+    border: none;
+    border-top: 1px dotted rgb(25, 104, 252);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wokflow__dotted-second {
+    margin-top: 149px;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  max-width: 525px;
+  margin: 120px auto;
+  margin-bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  color: rgb(17, 34, 63);
+}
+
+.page {
+  width: 100%;
+  overflow: hidden;
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/BackgroundDecor.png);
+}
+@media screen and (min-width: 1024px) {
+  .page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .page {
+    background-image: linear-gradient(to right, rgba(25, 104, 252, 0.0001) 0%, rgba(25, 104, 252, 0.05) 23%, rgba(25, 104, 252, 0.0335) 49%, rgba(25, 104, 252, 0.0001) 100%, rgba(25, 104, 252, 0.05) 100%);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

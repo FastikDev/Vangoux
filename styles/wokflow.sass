@@ -1,0 +1,101 @@
+.wokflow
+  max-width: 525px
+  margin: 120px auto 0 auto
+
+  +for-large-up
+    width: $desctop-width
+  
+  &__title
+    text-transform: uppercase
+    font-size: 30px
+    line-height: 60px
+    font-weight: 400
+    margin: 0
+
+    +for-large-up
+      margin-left: 40px
+
+  &__line 
+    width: 80px
+    height: 2px
+    margin: 10px 0px 48px 0px
+    background-color: $color-blue
+
+    +for-large-up
+      margin-bottom: 38px 
+
+  &__steps
+    +for-large-up
+      display: flex
+
+  &-step
+    position: relative
+    margin: 0
+    width: 100%
+    height: 180px
+    padding: 40px
+    background-color: white
+
+    &__second
+      +for-large-up
+        margin-top: 40px
+
+    &__last
+     +for-large-up
+       margin-top: 80px
+        
+        
+
+    +for-large-up
+      width: 325px
+      height: 225px
+
+    &__lable
+      font-size: 12px
+      font-weight: 700
+      line-height: 20px
+      margin: 0
+    
+    &__title
+      font-size: 18px
+      line-height: 40px
+      font-weight: 700
+      text-transform: uppercase
+      color: $color-text-blue
+      margin: 0
+
+    &__description
+      margin: 0
+      margin-top: 10px
+      line-height: 30px
+
+    &__icon
+      width: 40px
+      height: 36px
+      position: absolute
+      top: 40px
+      right: 40px
+
+    &__img
+      width: 25px
+      position: absolute
+      right: 0
+      bottom: 0
+
+  &__dotted
+    width: 70px
+    height: 40px
+    margin: 0
+    margin-left: 60px
+    border: none
+    border-left: 1px dotted $color-blue
+
+    +for-large-up
+      margin: 0
+      margin-top: 110px
+      border: none
+      border-top: 1px dotted $color-blue
+      
+    &-second
+      +for-large-up
+        margin-top: 149px
