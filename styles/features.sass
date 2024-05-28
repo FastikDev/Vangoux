@@ -1,6 +1,88 @@
 .features
-  display: flex
-  flex-direction: column
-  max-width: 525px
-  margin: 120px auto
-  margin-bottom: 0 
+  width: 100
+  margin: 120px auto 0 auto
+
+  +for-large-up
+    width: $desctop-width
+    margin: 115px auto 0 auto 
+
+  &__title
+    margin: 0
+    font-size: 30px
+    font-weight: 400
+    text-transform: uppercase
+    line-height: 60px
+
+  &__line
+    background-color: $color-blue
+    height: 2px
+    width: 80px
+    margin: 0
+    margin-top: 10px
+
+    +for-large-up
+      margin-left: -40px
+
+  &__list
+    margin: 0
+    margin-top: 48px
+
+    +for-large-up
+      display: flex
+
+    &-item
+      position: relative
+      height: 200px
+      margin-bottom: 55px
+      box-shadow: 0px 60px 20px rgba(49, 69, 244, 0.1)
+
+      +for-large-up
+        height: 325px
+        height: 295px
+        margin-bottom: 0
+        
+        &:first-child
+          margin-right: 69px 
+
+      &:nth-child(2)
+        margin-top: 40px 
+
+      &:last-child
+        margin-bottom: 0
+        margin-top: 80px
+
+        +for-large-up
+          margin-left: 81px 
+
+      &-img
+        width: 25px
+        position: absolute
+        bottom: 0
+        right: 0
+
+      &-header
+        display: flex
+        background-color: $features-color-header
+        
+        &-img
+          width: 80px
+
+          +for-large-up
+            width: 120px
+        
+        &-title
+          margin: auto
+          margin-left: 20px
+          font-size: 20px
+          line-height: 40px
+          font-weight: 600 
+
+          +for-large-up
+            line-height: 30px
+      
+      &-description
+        line-height: 30px
+        margin: 30px 40px
+
+        +for-large-up
+          margin: 40px

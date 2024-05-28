@@ -229,7 +229,6 @@
 }
 
 .wokflow {
-  max-width: 525px;
   margin: 120px auto 0 auto;
 }
 @media screen and (min-width: 1024px) {
@@ -263,6 +262,7 @@
 @media screen and (min-width: 1024px) {
   .wokflow__steps {
     display: flex;
+    width: 100%;
   }
 }
 .wokflow-step {
@@ -344,11 +344,109 @@
 }
 
 .features {
-  display: flex;
-  flex-direction: column;
-  max-width: 525px;
-  margin: 120px auto;
+  width: 100;
+  margin: 120px auto 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .features {
+    width: 1120px;
+    margin: 115px auto 0 auto;
+  }
+}
+.features__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 60px;
+}
+.features__line {
+  background-color: rgb(25, 104, 252);
+  height: 2px;
+  width: 80px;
+  margin: 0;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .features__line {
+    margin-left: -40px;
+  }
+}
+.features__list {
+  margin: 0;
+  margin-top: 48px;
+}
+@media screen and (min-width: 1024px) {
+  .features__list {
+    display: flex;
+  }
+}
+.features__list-item {
+  position: relative;
+  height: 200px;
+  margin-bottom: 55px;
+  box-shadow: 0px 60px 20px rgba(49, 69, 244, 0.1);
+}
+@media screen and (min-width: 1024px) {
+  .features__list-item {
+    height: 325px;
+    height: 295px;
+    margin-bottom: 0;
+  }
+  .features__list-item:first-child {
+    margin-right: 69px;
+  }
+}
+.features__list-item:nth-child(2) {
+  margin-top: 40px;
+}
+.features__list-item:last-child {
   margin-bottom: 0;
+  margin-top: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .features__list-item:last-child {
+    margin-left: 81px;
+  }
+}
+.features__list-item-img {
+  width: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.features__list-item-header {
+  display: flex;
+  background-color: rgb(243, 247, 255);
+}
+.features__list-item-header-img {
+  width: 80px;
+}
+@media screen and (min-width: 1024px) {
+  .features__list-item-header-img {
+    width: 120px;
+  }
+}
+.features__list-item-header-title {
+  margin: auto;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+}
+@media screen and (min-width: 1024px) {
+  .features__list-item-header-title {
+    line-height: 30px;
+  }
+}
+.features__list-item-description {
+  line-height: 30px;
+  margin: 30px 40px;
+}
+@media screen and (min-width: 1024px) {
+  .features__list-item-description {
+    margin: 40px;
+  }
 }
 
 * {
