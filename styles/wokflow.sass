@@ -14,18 +14,10 @@
     +for-large-up
       margin-left: 40px
 
-  &__line 
-    width: 80px
-    height: 2px
-    margin: 10px 0px 48px 0px
-    background-color: $color-blue
-
-    +for-large-up
-      margin-bottom: 38px 
-
   &__steps
     
     +for-large-up
+      magin-top: 38px
       display: flex
       width: 100%
 
@@ -36,14 +28,21 @@
     height: 180px
     padding: 40px
     background-color: white
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+    &:first-child
+      margin-top: 48px
+
+      +for-large-up
+        margin-top: 38px
 
     &__second
       +for-large-up
-        margin-top: 40px
+        margin-top: 78px
 
     &__last
      +for-large-up
-       margin-top: 80px
+       margin-top: 118px
         
         
 
@@ -93,10 +92,10 @@
 
     +for-large-up
       margin: 0
-      margin-top: 110px
+      margin-top: 148px
       border: none
       border-top: 1px dotted $color-blue
       
     &-second
       +for-large-up
-        margin-top: 149px
+        margin-top: 187px
