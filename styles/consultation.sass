@@ -1,0 +1,57 @@
+.consultation
+  position: relative
+  width: 100%
+  margin: 60px auto
+  margin-bottom: 0
+  padding: 60px
+  background-color: $color-blue
+  
+  +for-large-up
+    margin-top: 120px
+    padding: 80px auto
+
+  &__container
+    +for-large-up
+      max-width: 640px 
+
+  &__title
+    font-size: $title-font-size
+    line-height: $title-line-height
+    font-weight: 700
+    text-transform: uppercase
+    margin: 0
+    color: white
+
+  &__img
+    z-index: 0
+    display: none
+    position: absolute
+    top: 20px
+    right: 0
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+
+    +for-large-up
+      display: block
+
+  &__line
+    background-color: white
+
+  &__description
+    margin: 0
+    margin-top: 38px
+    color: white
+    font-size: 20px
+    line-height: 40px
+
+    +for-large-up
+      margin-top: 48px
+
+  &__btn
+    margin-top: 40px 
+    color: $color-blue
+    background-color: white
+
+    +for-large-up
+      max-width: 320px
+  

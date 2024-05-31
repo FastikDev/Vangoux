@@ -1,0 +1,44 @@
+.stories
+  width: 100%
+  margin: 60px auto
+  margin-bottom: 0
+
+  +for-large-up
+    margin: 120px auto
+
+  &__title
+    margin: 0
+    font-size: $title-font-size
+    line-height: $title-line-height
+    font-weight: 400
+    text-transform: uppercase
+
+  &__list
+    margin-top: 38px
+
+    +for-large-up
+      display: flex
+      justify-content: space-around
+
+    &-item
+      +for-large-up
+        width:420px
+
+      &-header
+        display: flex
+
+        &-icon
+          width: 40px
+          height: 33px
+
+        &-title
+          margin: 0
+          margin-left: 20px
+          font-size: 20px
+          font-weight: 600
+          line-height: 40px
+      &-description
+        margin: 0
+        margin-top: 20px
+        margin-left: 60px
+        line-height: 30px

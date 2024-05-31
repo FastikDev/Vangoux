@@ -1,0 +1,44 @@
+.purposes
+  margin: 120px auto
+  margin-bottom: 0
+  
+  +for-large-up
+    width: $desctop-width
+
+  &__title
+    margin: 0
+    font-size: $title-font-size
+    line-height: $title-line-height
+    text-transform: uppercase
+
+  &__line
+    +for-large-up
+      margin-left: -40px 
+
+  &__list
+    margin-top: 38px
+    display: flex
+    flex-wrap: wrap
+    gap: 40px
+
+    &-item
+        display: flex
+        align-items: center
+        width: 520px
+        height: 80px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+        +for-large-up
+          width: 540px
+
+        &-img
+            width: 80px
+            height: 80px
+
+        &-description
+          margin-left: 20px 
+          font-size: 18px
+          font-weight: 600
+          line-height: 40px
+
+    
