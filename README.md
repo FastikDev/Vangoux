@@ -1,6 +1,6 @@
 # Vangoux layout
 
-### [Site link]([https://vangoux-8hil1gsy6-fastikdevs-projects.vercel.app/])
+### [Site link](https://vangoux-8hil1gsy6-fastikdevs-projects.vercel.app/)
 
 Layout supports mobile (up-to-400) and desktop (up-to-1024) versions
 
