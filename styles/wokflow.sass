@@ -1,13 +1,14 @@
 .wokflow
-  margin: 120px auto 0 auto
+  margin: 120px auto
+  margin-bottom: 0
 
   +for-large-up
     width: $desctop-body-width + 5px
   
   &__title
     text-transform: uppercase
-    font-size: 30px
-    line-height: 60px
+    font-size: $title-font-size
+    line-height: $title-line-height
     font-weight: 400
     margin: 0
 
@@ -25,7 +26,7 @@
     height: 180px
     padding: 40px
     background-color: white
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: $black-shadow
 
     &:first-child
       margin-top: 48px

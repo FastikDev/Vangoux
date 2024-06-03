@@ -9,7 +9,8 @@
 @media screen and (min-width: 1024px) {
   .page-header {
     width: 1120px;
-    margin: 30px auto 0 60px;
+    margin: 30px auto;
+    margin-bottom: 0;
     padding: 0;
   }
 }
@@ -95,7 +96,8 @@
     position: relative;
     left: 0;
     padding: 0;
-    margin: 150px auto 0 60px;
+    margin: 150px auto;
+    margin-bottom: 0;
   }
 }
 .headline__action {
@@ -163,7 +165,7 @@
 .headline__visit-desctop {
   padding: 30px 60px;
   font-size: 20px;
-  font-weight: Bold;
+  font-weight: 700;
   line-height: 40px;
   text-align: center;
   color: white;
@@ -185,7 +187,7 @@
   .reviews {
     display: flex;
     width: 1120px;
-    margin: 160px;
+    margin: 160px auto;
     margin-bottom: 0;
   }
 }
@@ -246,7 +248,8 @@
 }
 
 .wokflow {
-  margin: 120px auto 0 auto;
+  margin: 120px auto;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 1024px) {
   .wokflow {
@@ -361,7 +364,8 @@
 @media screen and (min-width: 1024px) {
   .features {
     width: 1165px;
-    margin: 115px auto 0 auto;
+    margin: 115px auto;
+    margin-bottom: 0;
   }
 }
 .features__title {
@@ -463,12 +467,13 @@
 @media screen and (min-width: 1024px) {
   .users {
     width: 1160px;
+    margin-top: 115px;
   }
 }
 .users__title {
   margin: 0;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 30px;
   line-height: 60px;
   text-transform: uppercase;
 }
@@ -602,6 +607,11 @@
   text-transform: uppercase;
   margin: 0;
   color: white;
+}
+@media screen and (min-width: 1024px) {
+  .consultation__title {
+    width: 1120px;
+  }
 }
 .consultation__img {
   z-index: 0;
