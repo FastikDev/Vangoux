@@ -648,6 +648,7 @@
 @media screen and (min-width: 1024px) {
   .stories {
     margin: 120px auto;
+    width: 1160px;
   }
 }
 .stories__title {
