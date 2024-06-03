@@ -1,0 +1,54 @@
+.footer
+  position: relative
+  width: 100%
+  display: flex
+  align-items: center
+  margin-top: 61px 
+  padding: 40px
+
+  +for-large-up
+    padding: 40px auto
+    margin-top: 120px
+
+  &-logo
+    height: 50px
+    width: 250px
+    display: flex
+    align-items: center
+    background-color: $footer-logo-bg
+    
+    &__img
+      max-width: 50px
+
+    &__description
+      margin: auto
+      font-size: 14px
+      font-weight: 600
+      line-height: 20px
+      color: $color-blue
+
+  &__nav
+    display: none
+
+    +for-large-up
+      display: flex
+
+  .social-links
+    margin-left: 50px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &_facebook
+      padding: 15px 20px
+
+    &_instagram
+        padding: 15px
+
+  &__img
+    position: absolute
+    top: 70px
+    right: 40px
+    width: 55px
+    height: 60px
+    
