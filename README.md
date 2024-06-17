@@ -2,7 +2,7 @@
 
 ### [Site link](https://vangoux-8hil1gsy6-fastikdevs-projects.vercel.app/)
 
-Layout supports mobile (up-to-400) and desktop (up-to-1024) versions
+Layout supports desktop (up-to-1024) versions
 
 ### The tech stack is:
 
@@ -14,4 +14,4 @@ Layout supports mobile (up-to-400) and desktop (up-to-1024) versions
 
 ### Author
 
-- Viktor
+- Viktor Troyan

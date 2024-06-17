@@ -12,49 +12,45 @@
     font-weight: $title-font-size
     line-height: $title-line-height
     text-transform: uppercase
-    
-  .mobile
-    display: block
-    +for-large-up
-      display: none
-    
-  .desctop
-    display: none
-    +for-large-up
+  
+    &_mobile
       display: block
+      +for-large-up
+        display: none
+    
+    &_desctop
+      display: none
+      +for-large-up
+        display: block
+     
 
-  &__line
-
-    +for-large-up
-      margin-left: -40px 
-
-  &__cards
+  &__list
     display: flex
     flex-wrap: wrap
     gap: 20px
     justify-content: center
     margin-top: 28px
 
-    &-item
-      width: 250px
-      height: 190px
-      box-shadow: $black-shadow
+.user
+  width: 250px
+  height: 190px
+  box-shadow: $black-shadow
 
-      +for-large-up
-        width: 360px
-        height: 160px
-        flex: 1 1 calc(33.333% - 20px)
+  +for-large-up
+    width: 360px
+    height: 160px
+    flex: 1 1 calc(33.333% - 20px)
 
-      &:last-child
-        margin-bottom: 0
+  &:last-child
+    margin-bottom: 0
 
-      &-title
-        margin: 20px
-        font-size: 20px
-        line-height: 40px
-        color: $color-text-blue
-        text-transform: uppercase
+  &__title
+    margin: 20px
+    font-size: 20px
+    line-height: 40px
+    color: $color-text-blue
+    text-transform: uppercase
 
-      &-description
-        margin: 20px
-        line-height: 30px
+  &__description
+    margin: 20px
+    line-height: 30px

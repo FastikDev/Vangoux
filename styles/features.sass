@@ -1,5 +1,5 @@
 .features
-  width: 100
+  width: 100%
   margin: 120px auto 0 auto
 
   +for-large-up
@@ -27,59 +27,58 @@
     +for-large-up
       display: flex
 
-    &-item
-      position: relative
-      height: 200px
-      margin-bottom: 55px
-      box-shadow: $black-shadow
+.feature
+  position: relative
+  height: 200px
+  margin-bottom: 55px
+  box-shadow: $black-shadow
 
-      +for-large-up
-        height: 325px
-        height: 295px
-        margin-bottom: 0
+  +for-large-up
+    height: 325px
+    margin-bottom: 0
+
+    &:first-child
+      margin-right: 69px 
+
+  &:nth-child(2)
+    margin-top: 40px 
+
+  &:last-child
+    margin-bottom: 0
+    margin-top: 80px
+
+    +for-large-up
+      margin-left: 81px 
+
+  &__img
+    width: 25px
+    position: absolute
+    bottom: 0
+    right: 0
+
+  &__header
+    display: flex
+    background-color: $features-color-header
         
-        &:first-child
-          margin-right: 69px 
+  &__header-img
+    width: 80px
 
-      &:nth-child(2)
-        margin-top: 40px 
-
-      &:last-child
-        margin-bottom: 0
-        margin-top: 80px
-
-        +for-large-up
-          margin-left: 81px 
-
-      &-img
-        width: 25px
-        position: absolute
-        bottom: 0
-        right: 0
-
-      &-header
-        display: flex
-        background-color: $features-color-header
+    +for-large-up
+      width: 120px
         
-        &-img
-          width: 80px
+  &__header-title
+    margin: auto
+    margin-left: 20px
+    font-size: 20px
+    line-height: 40px
+    font-weight: 600 
 
-          +for-large-up
-            width: 120px
-        
-        &-title
-          margin: auto
-          margin-left: 20px
-          font-size: 20px
-          line-height: 40px
-          font-weight: 600 
-
-          +for-large-up
-            line-height: 30px
+    +for-large-up
+      line-height: 30px
       
-      &-description
-        line-height: 30px
-        margin: 30px 40px
+  &__description
+    line-height: 30px
+    margin: 30px 40px
 
-        +for-large-up
-          margin: 40px
+    +for-large-up
+      margin: 40px
