@@ -452,6 +452,7 @@
 }
 .feature__header {
   display: flex;
+  align-items: center;
   background-color: rgb(243, 247, 255);
 }
 .feature__header-img {
