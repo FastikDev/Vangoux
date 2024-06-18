@@ -12,6 +12,7 @@
 
   &__container
     +for-large-up
+      margin-left: 160px
       max-width: 640px 
 
   &__title
@@ -38,19 +39,20 @@
       display: block
 
   &__line
-    background-color: white
+    background-color: $color-white
 
   &__description
+    max-width: 640px
     margin: 0
     margin-top: 38px
-    color: white
+    color: $color-white
     font-size: 20px
     line-height: 40px
 
     +for-large-up
       margin-top: 48px
 
-  &__btn
+  &__button
     margin-top: 40px 
     color: $color-blue
     background-color: white
